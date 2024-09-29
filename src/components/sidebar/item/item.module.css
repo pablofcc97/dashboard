@@ -1,0 +1,81 @@
+.itemContainer{
+    position: relative;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.7rem 2.75rem;
+    transition: background-color .3s linear;
+    background-color: var(--second-color);
+}
+.item:hover{
+    background-color: #ffffff2a;
+}
+.itemActive::before{
+    height: 80%;
+    width: 4px;
+    background-color: var(--first-color);
+    left: 0;
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+}
+.itemContent{
+    display: flex;
+    gap:.85rem;
+}
+.icon{
+    width: 1.71rem;
+    height: 1.71rem;
+    background-color: #c2f4db1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.title{
+    font-weight: var(--font-normal);
+    color: var(--text-color-alter-contrast);
+}
+.item:hover .title{
+    color: var(--text-color-alter-contrast);
+}
+.itemActive .title{
+    color: var(--first-color);
+}
+.chevronIcon{
+    transition: transform .2s linear;
+    transform-origin: center;
+    width: 1.28rem;
+    height: 1.28rem;
+}
+.chevronIconOpen{
+    transform: rotate(180deg);
+}
+.subitems {
+    transition: height .5s ease; 
+}
+
+/*HIDDEN SIDEBAR*/
+.itemHidden .item{
+    padding: 1rem;
+}
+.itemHidden .title, .itemHidden .chevronIcon{
+    display: none;
+}
+.itemHidden .subitems{
+    position: absolute;
+    visibility: hidden;
+    padding: .5rem 0;
+    background-color: var(--second-color);
+    transition: visibility .3s ease;
+    top: 0;
+    right: -174px;
+}
+.itemHidden:hover .subitems{
+    visibility: visible;
+
+}
+

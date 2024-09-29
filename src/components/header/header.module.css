@@ -1,0 +1,19 @@
+.header{
+    background-color: var(--white-color);
+    height: var(--header-height);
+    width: calc(100% - var(--sidebar-width));
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 0 1.71rem;
+    transition: width .2s linear;
+}
+.actions, .menu{
+    display: flex;
+}
+.menu{
+    gap: 1.25rem;
+}

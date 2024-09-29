@@ -1,0 +1,18 @@
+.subitem{
+    display: flex;
+    gap:.85rem;
+    padding: 0.7rem 2.75rem;
+    cursor: pointer;
+}
+.subitem .title{
+    transition: color .3s linear;
+}
+.subitem:hover  .title{
+    color: var(--text-color-alter-contrast);
+}
+.subitem svg path{
+    transition: fill .3s linear;
+}
+.subitem:hover svg path{
+    fill: var(--text-color-alter-contrast) !important;
+}

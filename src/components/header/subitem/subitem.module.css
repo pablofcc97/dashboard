@@ -1,0 +1,23 @@
+.subItem{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: var(--white-color);
+    padding: .8rem .9rem;
+    transition: background-color .3s linear;
+    min-width: 15.7rem;
+}
+.subItem:hover{
+    background-color: var(--gray-color--extralight);
+}
+.preIcon{
+    height: 16px;
+    width: 21px;
+    margin-right: .5rem;
+}
+.title{
+    font-size: 1rem;
+    font-weight: var(--font-medium);
+    color: var(--text-color-contrast);
+}

@@ -1,0 +1,32 @@
+
+.userSubMenu{
+    min-width: 220px;
+    background-color: var(--white-color);
+}
+.userImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    background-color: var(--accent-color);
+}
+.userImage{
+    width: 3.42rem;
+    height: 3.42rem;
+    border-radius: 50%;
+}
+.userOptionsContainer{
+    padding: .5rem 0;
+    border-bottom: solid 1px var(--gray-color--light);
+}
+.userOptionsSection{
+    padding: 1rem;
+}
+.optionTitle{
+    font-size: 0.9rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--text-color-contrast);
+    margin-bottom: .5rem;
+}

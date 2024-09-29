@@ -1,0 +1,35 @@
+.itemContainer{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.item{
+    display: flex;  
+    gap: 0.255rem;
+    align-items: center;
+}
+.preIcon{
+    /*height: 16px;
+    width: 21px;*/
+    height: 2.28rem;
+    width: 2.28rem;
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.title{
+    font-size: 1rem;
+    font-weight: var(--font-medium);
+    color: var(--text-color-contrast);
+}
+.submenu{
+    position: absolute;
+    box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.2);
+    top: var(--header-height);
+    transition: opacity .5s ease;
+    cursor: auto;
+}

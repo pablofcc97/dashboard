@@ -1,0 +1,28 @@
+.action{
+    display: flex;
+    gap:.85rem;
+    padding: 0.7rem 2.75rem;
+    cursor: pointer;
+}
+.action .title{
+    color: var(--text-color-alter);
+    transition: color .3s linear;
+    font-weight: var(--font-normal);
+}
+.action:hover  .title{
+    color: var(--text-color-alter-contrast);
+}
+.action svg path{
+    transition: fill .3s linear;
+}
+.action:hover svg path{
+    fill: var(--text-color-alter-contrast) !important;
+}
+
+/*HIDDEN SIDEBAR*/
+.actionHidden{
+    padding: 1rem;
+}
+.actionHidden .title{
+    display: none;
+}
