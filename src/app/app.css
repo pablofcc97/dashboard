@@ -35,7 +35,7 @@
   --tittle-font: 'Inter', sans-serif;
   --body-font: 'Inter', sans-serif;
 
-  --h1-size:  2rem;
+  --h1-size:  1.5rem;
   --h2-size:  1.28rem;
   --h3-size:  1.2rem;
   --h4-size:  1.15rem;
@@ -64,6 +64,7 @@
   --text-color-contrast: #f0f0f0;
   --gray-color--light:#303030;
   --gray-color--extralight:#232333;
+  --tittle-color:#fff ;
 }
 
 *{
@@ -199,7 +200,6 @@ img{
     --header-height: 6rem;
 
     --section-padding:5.5rem;
-    --h1-size:  3rem;
   }
   .container{
     padding: var(--section-padding) 5% 0;
@@ -216,7 +216,7 @@ img{
   :root{
     --header-height: 6rem;
     --section-padding:3.5rem;
-    --h1-size:  2.2rem;
+    --h1-size:  1.35rem;
     --h2-size:  1.65rem;
     --h3-size:  1.4rem;
     --button-size: 1rem;

@@ -35,6 +35,7 @@
     align-items: center;
     border-radius: 3px;
 }
+
 .title{
     font-weight: var(--font-normal);
     color: var(--text-color-alter-contrast);

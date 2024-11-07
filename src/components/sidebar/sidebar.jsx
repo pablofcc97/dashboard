@@ -1,5 +1,6 @@
 "use client"
 import { useSelector, useDispatch } from 'react-redux';
+import { useRouter } from 'next/navigation'
 import { useEffect, useRef} from 'react';
 import { custom } from '@/store/slice/sidebarSlice';
 import useOutsideChecker from '@/hooks/useOutsideCheck'
@@ -19,7 +20,11 @@ const Sidebar = () => {
     const hideSidebar = useSelector(state=>!state.sideBar.value)
     const sideBarRef = useRef(null)
     const dispatch = useDispatch()
+    const router = useRouter()
 
+    const redirect = (url) => {
+        router.push(url)
+    }
 
     // check a click outside of the elementREF to do the action
     useOutsideChecker(sideBarRef,() => dispatch(custom(true)), (hideSidebar && screen.width<1000), document.querySelector('#header') );
@@ -32,17 +37,21 @@ const Sidebar = () => {
 
     return(
         <div className={`${styles.sidebar} ${(hideSidebar) && styles.sideBarHidden}`} ref={sideBarRef} >
-            <div className={styles.logoSection}>
+            <div className={styles.logoSection} onClick={()=>redirect('/')}>
                 <img src={ screen.width>1000 && hideSidebar ?'/images/logos/logoShort.png' :'/images/logos/logoLarge.png'} alt="" />
             </div>
             <div className={styles.items}>
-                <SidebarItem title={'Dashboard'} active={true} isSidebarHidden={hideSidebar}>
-                    <SidebarSubItem title={'General'}/>
+                <SidebarItem title={'Dashboard'} url={'/'} active={true} isSidebarHidden={hideSidebar}></SidebarItem>
+                <SidebarItem title={'Tablas'} icon={mdiTable} isSidebarHidden={hideSidebar}>
+                    <SidebarSubItem title={'General'} url={'/tables'}/>
                     <SidebarSubItem title={'Asistencias'}/>
                     <SidebarSubItem title={'Ventas'}/>
                 </SidebarItem>
-                <SidebarItem title={'Tablas'} icon={mdiTable} isSidebarHidden={hideSidebar}></SidebarItem>
-                <SidebarItem title={'Graficos'} icon={mdiChartBar} isSidebarHidden={hideSidebar}></SidebarItem>
+                <SidebarItem title={'Graficos'} icon={mdiChartBar} isSidebarHidden={hideSidebar}>
+                    <SidebarSubItem title={'General'} url={'/charts'}/>
+                    <SidebarSubItem title={'Asistencias'}/>
+                    <SidebarSubItem title={'Ventas'}/>
+                </SidebarItem>
                 <SidebarItem title={'Item1'} isSidebarHidden={hideSidebar}></SidebarItem>
                 <SidebarItem title={'Item2'} isSidebarHidden={hideSidebar}></SidebarItem>
                 <SidebarItem title={'Item3'} isSidebarHidden={hideSidebar}></SidebarItem>
