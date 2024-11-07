@@ -1,10 +1,13 @@
+export const metadata = {
+    title: "Tablas"
+}
 
-let TablesPage = () => {
+let TablePage = () => {
     return(
-        <div className="main">
+        <>
             <h1>Tablas</h1>
-        </div>
+        </>
     )
 }
 
-export default TablesPage
+export default TablePage
