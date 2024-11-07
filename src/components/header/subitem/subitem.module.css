@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     gap: .5rem;
-    background-color: var(--white-color);
+    background-color: var(--header-background);
     padding: .8rem .9rem;
     transition: background-color .3s linear;
     min-width: 15.7rem;

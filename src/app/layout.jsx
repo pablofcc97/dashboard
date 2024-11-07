@@ -1,4 +1,5 @@
 import { StoreProvider } from '@/store/storeProvider'
+import { ThemeProvider } from '@/context/themeContext';
 import './app.css'
 
 export const metadata = {
@@ -10,11 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <StoreProvider>
-      <html lang="es">
-        <body>
-          {children}
-        </body>
-      </html>
+      <ThemeProvider>
+        <html lang="es">
+          <body>
+            {children}
+          </body>
+        </html>
+      </ThemeProvider>
     </StoreProvider>
   )
 }

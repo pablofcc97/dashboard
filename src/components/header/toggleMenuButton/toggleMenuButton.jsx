@@ -2,7 +2,7 @@
 
 
 import { useDispatch } from 'react-redux';
-import { toggle } from '@/store/slice';
+import { toggle } from '@/store/slice/sidebarSlice';
 
 import Icon from '@mdi/react';
 import { mdiMenu } from '@mdi/js';

@@ -1,9 +1,9 @@
 "use client"
 
 import { useRouter } from 'next/navigation';
+import Ico from '@/components/icon/icon';
 import styles from './userSubitem.module.css'
 //ICONS
-import Icon from '@mdi/react';
 import { mdiCog } from '@mdi/js';
 
 const UserSubitem = ({title, icon=mdiCog, notifications=0, notificacionsColor='var(--first-color)'}, url='/') => {
@@ -18,11 +18,7 @@ const UserSubitem = ({title, icon=mdiCog, notifications=0, notificacionsColor='v
             <div className={styles.iconsContainer}>
                 {notifications>0 && <span className={styles.notification} style={{'backgroundColor': notificacionsColor}}>{notifications}</span>}
                 <span className={styles.icon}>
-                    <Icon 
-                        path={icon} 
-                        size={'1.05rem'} 
-                        color='#000'  
-                    />
+                    <Ico icon={icon} size={'1.05rem'}/>
                 </span>
             </div>
         </div>

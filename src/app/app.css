@@ -8,18 +8,24 @@
 
   /*====COLORS=====*/
   --background-color:#f0f1f6;
+  --header-background: #fff;
   --first-color: #44ce42;
   --first-color--light: #86f184;
   --second-color: #181824;
   --second-color--light:#2d2d46;
   --second-color--extraLight:#52527e;
   --text-color:#8c939c;
+  /*text colors for SideBar*/
   --text-color-alter: #8e94a9;
-  --text-color-contrast: #111;
   --text-color-alter-contrast: #eeeded;
+
+  --text-color-contrast: #111;
   --tittle-color:#001737 ;
-  --white-color:#fff;
-  --black-color:#000;
+  --text-white-color: #fff;
+  --text-black-color: #000000;
+
+  --background-white-color:#fff;
+  --background-black-color:#000;
   --gray-color:#CACACA;
   --gray-color--light:#E5E5E5;
   --gray-color--extralight:#f1f1f1;
@@ -50,6 +56,14 @@
   --z-tooltip:10;
   --z-fixed:100;
   --z-modal:1000;
+}
+.dark{
+  --background-color:#111118;
+  --header-background: #181824;
+
+  --text-color-contrast: #f0f0f0;
+  --gray-color--light:#303030;
+  --gray-color--extralight:#232333;
 }
 
 *{
@@ -148,7 +162,7 @@ img{
   position: absolute;
 }
 .section--alter h2, .section--alter h3, .section--alter h4{
-  color:var(--white-color)
+  color:var(--text-white-color)
 }
 .section--alter p, .section--alter span, .section--alter li{
   color:var(--text-color-alter)
@@ -170,7 +184,7 @@ img{
 }
 .button:hover{
   background-color: var(--first-color--light);
-  color:var(--white-color);
+  color:var(--text-white-color);
 }
 .button__icon{
   margin-left: 0.5rem;

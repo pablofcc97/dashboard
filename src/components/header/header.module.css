@@ -1,5 +1,5 @@
 .header{
-    background-color: var(--white-color);
+    background-color: var(--header-background);
     height: var(--header-height);
     width: calc(100% - var(--sidebar-width));
     position: fixed;
@@ -20,6 +20,9 @@
 .menuSection{
     display: flex;
     gap: 1.25rem;
+}
+.notificationsContainer{
+    align-items: center;
 }
 @media(max-width: 1000px){
     .header{

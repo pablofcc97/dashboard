@@ -1,10 +1,10 @@
 "use client"
 
 import { useRouter } from 'next/navigation';
+import Ico from '@/components/icon/icon';
 import styles from './subitem.module.css'
 
 //ICON
-import Icon from '@mdi/react';
 import { mdiPencilOutline } from '@mdi/js';
 
 const HeaderSubItem = ({iconUrl, icon=mdiPencilOutline, title, url='/'}) => {
@@ -16,11 +16,7 @@ const HeaderSubItem = ({iconUrl, icon=mdiPencilOutline, title, url='/'}) => {
                     ?<span className={styles.preIcon}>
                         <img src={iconUrl} alt="" />
                      </span>
-                     :<Icon 
-                            path={icon} 
-                            size={'2.14rem'} 
-                            color='#111'    
-                        />
+                     :<Ico icon={icon} size={'2.14rem'}/>
                 
                 }
             </span>

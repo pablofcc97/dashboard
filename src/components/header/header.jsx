@@ -6,7 +6,6 @@ import HeaderIcon from './icon/icon';
 import styles from './header.module.css'
 
 //ICONS
-import Icon from '@mdi/react';
 import { mdiFilePdfBox } from '@mdi/js';
 import { mdiFileExcelBox } from '@mdi/js';
 import { mdiFileWordBox } from '@mdi/js';
@@ -14,7 +13,8 @@ import { mdiEyeOutline } from '@mdi/js';
 import { mdiPencilOutline } from '@mdi/js';
 import { mdiBellOutline } from '@mdi/js';
 
-
+//THEME COLOR CHANGE
+import ThemeButton from './themeButton/themeButton';
 
 const Header = () => {
     const userImg = '/images/users/face16.jpg'
@@ -47,6 +47,8 @@ const Header = () => {
                 <div className={`${styles.notificationsContainer} ${styles.menuSection}`}>
                     <HeaderIcon hasNotifications={true}/>
                     <HeaderIcon hasNotifications={true} icon={mdiBellOutline} dotColor='#ff0000'/>
+
+                    <ThemeButton/>
                 </div>
             </div>
         </div>

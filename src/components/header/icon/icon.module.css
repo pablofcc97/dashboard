@@ -13,7 +13,7 @@
     position: absolute;
     top: -.3rem;
     right: 0;
-    border: solid .25rem var(--white-color);
+    border: solid .25rem var(--header-background);
     border-radius: 50%;
     animation: grow2 7s linear infinite;
 }

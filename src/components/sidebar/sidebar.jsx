@@ -1,7 +1,7 @@
 "use client"
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useRef} from 'react';
-import { custom } from '@/store/slice';
+import { custom } from '@/store/slice/sidebarSlice';
 import useOutsideChecker from '@/hooks/useOutsideCheck'
 
 import SidebarItem from './item/item'

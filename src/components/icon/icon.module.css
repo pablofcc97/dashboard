@@ -1,0 +1,9 @@
+.icon{
+    max-width: 1.5rem;
+    height: auto;
+    position: relative;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
