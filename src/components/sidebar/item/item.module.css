@@ -76,6 +76,25 @@
 }
 .itemHidden:hover .subitems{
     visibility: visible;
-
 }
+
+@media(max-width: 1000px){
+    .itemHidden .item{
+        padding: 0.7rem 2.75rem;
+    }
+    .itemHidden .title, .itemHidden .chevronIcon{
+        display: block;
+    }
+    .itemHidden .subitems{
+        position: static;
+        visibility: visible;
+        padding: 0;
+        background-color: var(--second-color);
+        transition: visibility .3s ease;
+    }
+}
+
+
+
+
 

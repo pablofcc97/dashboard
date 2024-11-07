@@ -183,6 +183,7 @@ img{
 @media(max-width:1100px){
   :root{
     --header-height: 6rem;
+
     --section-padding:5.5rem;
     --h1-size:  3rem;
   }

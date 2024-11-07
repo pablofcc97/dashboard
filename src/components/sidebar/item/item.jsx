@@ -50,7 +50,7 @@ const SidebarItem = ({children, url='/', title, icon=mdiCube, active=false, isSi
                     </span>
                 }
             </div>
-            {(isOpen || isSidebarHidden) && 
+            {(isOpen || (isSidebarHidden && screen.width > 1000)) && 
                 <div className={`${styles.subitems}`}>
                     {children}
                 </div>

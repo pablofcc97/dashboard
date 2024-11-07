@@ -17,3 +17,23 @@
 .menu{
     gap: 1.25rem;
 }
+.menuSection{
+    display: flex;
+    gap: 1.25rem;
+}
+@media(max-width: 1000px){
+    .header{
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        gap: 2.5rem;
+        width: 100%;
+    }
+}
+@media(max-width: 600px){
+    .header{
+        justify-content: space-between;
+    }
+    .header .menuItemsContainer{
+        display: none;
+    }
+}

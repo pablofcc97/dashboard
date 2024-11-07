@@ -26,3 +26,12 @@
 .actionHidden .title{
     display: none;
 }
+
+@media(max-width: 1000px){
+    .actionHidden{
+        padding: 0.7rem 2.75rem;
+    }
+    .actionHidden .title{
+        display: block;
+    }
+}

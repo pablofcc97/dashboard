@@ -16,7 +16,7 @@ const UserSubitem = ({title, icon=mdiCog, notifications=0, notificacionsColor='v
         <div className={styles.userSubitem} onClick={redirect}>
             <span className={styles.title}>{title}</span>
             <div className={styles.iconsContainer}>
-                {notifications>0 && <span className={styles.notification} style={{'background-color': notificacionsColor}}>{notifications}</span>}
+                {notifications>0 && <span className={styles.notification} style={{'backgroundColor': notificacionsColor}}>{notifications}</span>}
                 <span className={styles.icon}>
                     <Icon 
                         path={icon} 
