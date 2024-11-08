@@ -196,6 +196,9 @@ img{
 }
 
 @media(max-width:1100px){
+  :root body{
+    --sidebar-width: 250px;
+  }
   :root{
     --header-height: 6rem;
 

@@ -11,20 +11,31 @@ export const metadata = {
   keywords: 'dashboard next js react',
 }
 
+const compose = (providers) =>
+  providers.reduce((Prev, Curr) => ({ children }) => (
+      <Prev>
+          <Curr>{children}</Curr>
+      </Prev>
+  ));
+
+const Provider = compose([
+  ThemeProvider
+])
+
 export default function RootLayout({ children }) {
   return (
     <StoreProvider>
-      <ThemeProvider>
+      <Provider>
         <html lang="es">
           <body>
-          <Sidebar/>
+            <Sidebar/>
             <Header/>
             <Body>
                 {children}                
             </Body>          
           </body>
         </html>
-      </ThemeProvider>
+      </Provider>
     </StoreProvider>
   )
 }

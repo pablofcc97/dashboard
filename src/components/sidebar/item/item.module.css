@@ -13,9 +13,12 @@
 .item:hover{
     background-color: #ffffff2a;
 }
+/* .itemActive{
+    border-left: 4px solid var(--first-color);
+} */
 .itemActive::before{
     height: 80%;
-    width: 4px;
+    width: 5px;
     background-color: var(--first-color);
     left: 0;
     top: 50%;
@@ -38,9 +41,6 @@
 
 .title{
     font-weight: var(--font-normal);
-    color: var(--text-color-alter-contrast);
-}
-.item:hover .title{
     color: var(--text-color-alter-contrast);
 }
 .itemActive .title{

@@ -7,6 +7,9 @@
 .subitem .title{
     transition: color .3s linear;
 }
+.subitemActive .title{
+    color: #44ce42;
+}
 .subitem:hover  .title{
     color: var(--text-color-alter-contrast);
 }
